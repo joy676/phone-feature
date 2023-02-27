@@ -90,6 +90,7 @@ const displayPhoneDetails = (phone) => {
     <p>Release Date: ${phone.releaseDate ? phone.releaseDate : 'No Release Date Found'}</p>
     <p>Storage: ${phone.mainFeatures ? phone.mainFeatures.storage : 'No Storage Info Found'}</p>
     <p>Others: ${phone.others ? phone.others.Bluetooth : 'No Bluetooth Info Found'}</p>
+    <p>Sensor: ${phone.mainFeatures.sensors ? phone.mainFeatures.sensors[0] : 'No Sensor Info Found'}</p>
     `
 }
 loadPhone('apple')
